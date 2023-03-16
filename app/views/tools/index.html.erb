@@ -1,0 +1,10 @@
+<h1>Tools</h1>
+
+<ul>
+  <% @tools.each do |tool| %>
+    <li>
+      <%= link_to tool.name, tool %>
+    </li>
+  <% end %>
+</ul>
+<%= link_to "New Tool",new_tool_path %>

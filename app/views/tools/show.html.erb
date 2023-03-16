@@ -1,0 +1,10 @@
+<h1><%= @tool.name %></h1>
+
+<p><%= @tool.description%></p>
+<ul>
+<li><%=link_to "edit",edit_tool_path(@tool)%></li>
+<li><%= link_to "Delete", tool_path(@tool), data: {
+  turbo_method: :delete,
+  turbo_confirm: "Are you sure?"
+} %></li>
+</ul>
